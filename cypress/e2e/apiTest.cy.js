@@ -1,3 +1,4 @@
+const { onArticlePage } = require("../support/pageObjects/articlePage")
 const { onHomePage } = require("../support/pageObjects/homePage")
 
 describe('template spec', () => {
@@ -9,7 +10,7 @@ describe('template spec', () => {
 
   it('verify Data', () => {
 
-    onHomePage.verifyData('new article','new description','new body')
+    onArticlePage.verifyData('new article','new description','new body')
 
   })
   
@@ -27,7 +28,7 @@ describe('template spec', () => {
 
   it('working with request and response', () => {
     
-    onHomePage.workingWithRequestAndResponse()
+    onArticlePage.workingWithRequestAndResponse()
 
   })
 })
